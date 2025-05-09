@@ -1,0 +1,79 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAF3D1; /* Pale yellow background */
+    color: #333;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.quote {
+    font-size: 28px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    color: #E06B22; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px orange;
+    
+}
+
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 200px;
+    color: #FF8C00; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    rotate: 15deg;
+    
+}
+
+    .paragraph {
+        font-family: 'playfair display', serif;
+        font-size: 22px;
+        color:#E06B22;
+        margin-bottom: 20px
+    }
+.author {
+    font-size: 22px;
+    font-weight: bold;
+    color: #D87B27; 
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+
+    .quote {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 18px;
+    }
+}
+
+

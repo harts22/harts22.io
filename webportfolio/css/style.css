@@ -1,0 +1,43 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
+    font-family:'Didot (serif)';
+	background:#141c2b;
+    color:#000000;
+	
+}
+
+
+div#container {
+    margin:auto;
+    margin-top:20px;
+    width:800px;
+    border:3px solid #654321;
+    padding:25px;
+    background:#BD9A7A;
+}
+
+
+header {
+  font-family: 'Didot' ;  
+}
+
+footer {
+   font-size:0.8em;
+}
+
+
+
+
+

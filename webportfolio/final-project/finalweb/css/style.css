@@ -13,12 +13,12 @@ html {
 /* Mobile First CSS */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #454541;
+  color: #cb63e0;
 }
 
 header {
-  background-color: #333;
+  background-color: #0a0a0a;
   color: #fff;
   padding: 10px 0;
 }
@@ -41,18 +41,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #f4f4f4;
-}
-#star img{
-    z-index: -1;
-    display: block;
-    background-color: white;
-    width: 100%;
-}
-#star a{
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    position: absolute;
 }
 
 main {

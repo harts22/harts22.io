@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>jQuery</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+</head>
+
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Moments of Reflection</h1>
+    </header>
+
+    <main>
+      <article class="main-content">
+        <blockquote>
+          "One day you finally knew
+what you had to do, and began,
+though the voices around you
+kept shouting
+their bad advice --
+though the whole house
+began to tremble
+and you felt the old tug
+at your ankles.
+"Mend my life!"
+each voice cried.
+But you didn't stop.
+You knew what you had to do,
+though the wind pried
+with its stiff fingers
+at the very foundations,
+though their melancholy
+was terrible.
+It was already late
+enough, and a wild night,
+and the road full of fallen
+branches and stones.
+But little by little,
+as you left their voice behind,
+the stars began to burn
+through the sheets of clouds,
+and there was a new voice
+which you slowly
+recognized as your own,
+that kept you company
+as you strode deeper and deeper
+into the world,
+determined to do
+the only thing you could do --
+determined to save
+the only life that you could save."
+          <footer>— Mary Oliver,
+The Journey</footer>
+        </blockquote>
+      </article>
+
+      <div class="buttons">
+        <button id="reveal-text">Reveal More Thoughts</button>
+        <button id="reveal-image">Show an Image</button>
+        <button id="reveal-video">Watch a Video</button>
+      </div>
+
+      <!-- Hidden Content Sections -->
+      <section id="extra-text" class="hidden">
+        <p>Mary Oliver's poem, "The Journey" is a powerful poem about personal transformation, self-liberation, and finding one's own voice. It describes the moment when someone chooses to leave behind external expectations, toxic influences, or fears and begins the path toward self-discovery and independence. </p>
+        <p>And the core message is clear; true change requires courage, solitude, and perseverance. The poem urges us to trust ourselves and that the journey, though hard, leads to freedom and a life that is truly ours.</p>
+      </section>
+
+      <figure id="extra-image" class="hidden">
+        <img src="img/walk.jpg" alt="Personal captured moment" />
+        <figcaption>A morning walk.</figcaption>
+      </figure>
+
+      <figure id="extra-video" class="responsive hidden">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PW7KjF8mXPk?si=qiU1DyuBCiCcYLse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </figure>
+    </main>
+  </div><!-- close "container" -->
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Interaction Script -->
+  <script>
+    $(document).ready(function() {
+      $('#reveal-text').click(function() {
+        $('#extra-text').fadeToggle();
+      });
+
+      $('#reveal-image').click(function() {
+        $('#extra-image').fadeToggle();
+      });
+
+      $('#reveal-video').click(function() {
+        $('#extra-video').fadeToggle();
+      });
+    }); // close .ready()
+  </script>
+    <footer>
+    <p>&#169;Taylor Hartline, all rights reserved, 2025</p>
+</footer>
+</body>
+</html>
